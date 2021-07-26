@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import DragonFly
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let c = DragonFly.Color()
     }
 }
 

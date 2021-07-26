@@ -14,7 +14,36 @@
 		7747C2A326AEEDE300802D49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7747C2A126AEEDE300802D49 /* Main.storyboard */; };
 		7747C2A526AEEDE400802D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7747C2A426AEEDE400802D49 /* Assets.xcassets */; };
 		7747C2A826AEEDE400802D49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7747C2A626AEEDE400802D49 /* LaunchScreen.storyboard */; };
+		7747C2B026AEF17900802D49 /* Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 7747C2AE26AEF17900802D49 /* Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7747C2B126AEF17900802D49 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 7747C2AF26AEF17900802D49 /* Color.m */; };
+		7747C2B226AEF23200802D49 /* Color.m in Headers */ = {isa = PBXBuildFile; fileRef = 7747C2AF26AEF17900802D49 /* Color.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		7747C2B426AEF65800802D49 /* DragonFly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7747C26B26AEEAF700802D49 /* DragonFly.framework */; };
+		7747C2B526AEF65800802D49 /* DragonFly.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7747C26B26AEEAF700802D49 /* DragonFly.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7747C2B626AEF65800802D49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7747C26226AEEAF700802D49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7747C26A26AEEAF700802D49;
+			remoteInfo = DragonFly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7747C2B826AEF65800802D49 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7747C2B526AEF65800802D49 /* DragonFly.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7747C26B26AEEAF700802D49 /* DragonFly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DragonFly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +57,8 @@
 		7747C2A426AEEDE400802D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7747C2A726AEEDE400802D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7747C2A926AEEDE400802D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7747C2AE26AEF17900802D49 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		7747C2AF26AEF17900802D49 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7747C2B426AEF65800802D49 /* DragonFly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +83,10 @@
 		7747C26126AEEAF700802D49 = {
 			isa = PBXGroup;
 			children = (
-				7747C26D26AEEAF700802D49 /* DragonFly */,
 				7747C29A26AEEDE300802D49 /* DragonFlyExemples */,
+				7747C26D26AEEAF700802D49 /* DragonFly */,
 				7747C26C26AEEAF700802D49 /* Products */,
+				7747C2B326AEF65800802D49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				7747C26E26AEEAF700802D49 /* DragonFly.h */,
+				7747C2AE26AEF17900802D49 /* Color.h */,
+				7747C2AF26AEF17900802D49 /* Color.m */,
 				7747C26F26AEEAF700802D49 /* Info.plist */,
 			);
 			path = DragonFly;
@@ -79,10 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				7747C2AD26AEEDF000802D49 /* App */,
-				7747C29F26AEEDE300802D49 /* ViewController.swift */,
-				7747C2A126AEEDE300802D49 /* Main.storyboard */,
 				7747C2A426AEEDE400802D49 /* Assets.xcassets */,
 				7747C2A626AEEDE400802D49 /* LaunchScreen.storyboard */,
+				7747C29F26AEEDE300802D49 /* ViewController.swift */,
+				7747C2A126AEEDE300802D49 /* Main.storyboard */,
 				7747C2A926AEEDE400802D49 /* Info.plist */,
 			);
 			path = DragonFlyExemples;
@@ -97,6 +132,13 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		7747C2B326AEF65800802D49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -104,6 +146,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7747C2B026AEF17900802D49 /* Color.h in Headers */,
+				7747C2B226AEF23200802D49 /* Color.m in Headers */,
 				7747C27026AEEAF700802D49 /* DragonFly.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,10 +180,12 @@
 				7747C29526AEEDE300802D49 /* Sources */,
 				7747C29626AEEDE300802D49 /* Frameworks */,
 				7747C29726AEEDE300802D49 /* Resources */,
+				7747C2B826AEF65800802D49 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7747C2B726AEF65800802D49 /* PBXTargetDependency */,
 			);
 			name = DragonFlyExemples;
 			productName = DragonFlyExemples;
@@ -207,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7747C2B126AEF17900802D49 /* Color.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +268,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7747C2B726AEF65800802D49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7747C26A26AEEAF700802D49 /* DragonFly */;
+			targetProxy = 7747C2B626AEF65800802D49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7747C2A126AEEDE300802D49 /* Main.storyboard */ = {
