@@ -8,55 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7747C27026AEEAF700802D49 /* DragonFly.h in Headers */ = {isa = PBXBuildFile; fileRef = 7747C26E26AEEAF700802D49 /* DragonFly.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7747C29C26AEEDE300802D49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747C29B26AEEDE300802D49 /* AppDelegate.swift */; };
-		7747C29E26AEEDE300802D49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747C29D26AEEDE300802D49 /* SceneDelegate.swift */; };
-		7747C2A026AEEDE300802D49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747C29F26AEEDE300802D49 /* ViewController.swift */; };
-		7747C2A326AEEDE300802D49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7747C2A126AEEDE300802D49 /* Main.storyboard */; };
-		7747C2A526AEEDE400802D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7747C2A426AEEDE400802D49 /* Assets.xcassets */; };
-		7747C2A826AEEDE400802D49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7747C2A626AEEDE400802D49 /* LaunchScreen.storyboard */; };
 		7747C2B026AEF17900802D49 /* Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 7747C2AE26AEF17900802D49 /* Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7747C2B126AEF17900802D49 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 7747C2AF26AEF17900802D49 /* Color.m */; };
 		7747C2B226AEF23200802D49 /* Color.m in Headers */ = {isa = PBXBuildFile; fileRef = 7747C2AF26AEF17900802D49 /* Color.m */; settings = {ATTRIBUTES = (Public, ); }; };
-		7747C2B426AEF65800802D49 /* DragonFly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7747C26B26AEEAF700802D49 /* DragonFly.framework */; };
-		7747C2B526AEF65800802D49 /* DragonFly.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7747C26B26AEEAF700802D49 /* DragonFly.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7747C2B626AEF65800802D49 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7747C26226AEEAF700802D49 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7747C26A26AEEAF700802D49;
-			remoteInfo = DragonFly;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		7747C2B826AEF65800802D49 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7747C2B526AEF65800802D49 /* DragonFly.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7747C26B26AEEAF700802D49 /* DragonFly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DragonFly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7747C26E26AEEAF700802D49 /* DragonFly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragonFly.h; sourceTree = "<group>"; };
 		7747C26F26AEEAF700802D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7747C29926AEEDE300802D49 /* DragonFlyExemples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonFlyExemples.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7747C29B26AEEDE300802D49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7747C29D26AEEDE300802D49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7747C29F26AEEDE300802D49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7747C2A226AEEDE300802D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7747C2A426AEEDE400802D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7747C2A726AEEDE400802D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7747C2A926AEEDE400802D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7747C2AE26AEF17900802D49 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 		7747C2AF26AEF17900802D49 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,21 +29,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7747C29626AEEDE300802D49 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7747C2B426AEF65800802D49 /* DragonFly.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		7747C26126AEEAF700802D49 = {
 			isa = PBXGroup;
 			children = (
-				7747C29A26AEEDE300802D49 /* DragonFlyExemples */,
 				7747C26D26AEEAF700802D49 /* DragonFly */,
 				7747C26C26AEEAF700802D49 /* Products */,
 				7747C2B326AEF65800802D49 /* Frameworks */,
@@ -94,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				7747C26B26AEEAF700802D49 /* DragonFly.framework */,
-				7747C29926AEEDE300802D49 /* DragonFlyExemples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,28 +58,6 @@
 				7747C26F26AEEAF700802D49 /* Info.plist */,
 			);
 			path = DragonFly;
-			sourceTree = "<group>";
-		};
-		7747C29A26AEEDE300802D49 /* DragonFlyExemples */ = {
-			isa = PBXGroup;
-			children = (
-				7747C2AD26AEEDF000802D49 /* App */,
-				7747C2A426AEEDE400802D49 /* Assets.xcassets */,
-				7747C2A626AEEDE400802D49 /* LaunchScreen.storyboard */,
-				7747C29F26AEEDE300802D49 /* ViewController.swift */,
-				7747C2A126AEEDE300802D49 /* Main.storyboard */,
-				7747C2A926AEEDE400802D49 /* Info.plist */,
-			);
-			path = DragonFlyExemples;
-			sourceTree = "<group>";
-		};
-		7747C2AD26AEEDF000802D49 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				7747C29B26AEEDE300802D49 /* AppDelegate.swift */,
-				7747C29D26AEEDE300802D49 /* SceneDelegate.swift */,
-			);
-			path = App;
 			sourceTree = "<group>";
 		};
 		7747C2B326AEF65800802D49 /* Frameworks */ = {
@@ -173,25 +101,6 @@
 			productReference = 7747C26B26AEEAF700802D49 /* DragonFly.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7747C29826AEEDE300802D49 /* DragonFlyExemples */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7747C2AA26AEEDE400802D49 /* Build configuration list for PBXNativeTarget "DragonFlyExemples" */;
-			buildPhases = (
-				7747C29526AEEDE300802D49 /* Sources */,
-				7747C29626AEEDE300802D49 /* Frameworks */,
-				7747C29726AEEDE300802D49 /* Resources */,
-				7747C2B826AEF65800802D49 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7747C2B726AEF65800802D49 /* PBXTargetDependency */,
-			);
-			name = DragonFlyExemples;
-			productName = DragonFlyExemples;
-			productReference = 7747C29926AEEDE300802D49 /* DragonFlyExemples.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,9 +111,6 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					7747C26A26AEEAF700802D49 = {
-						CreatedOnToolsVersion = 12.5;
-					};
-					7747C29826AEEDE300802D49 = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -223,7 +129,6 @@
 			projectRoot = "";
 			targets = (
 				7747C26A26AEEAF700802D49 /* DragonFly */,
-				7747C29826AEEDE300802D49 /* DragonFlyExemples */,
 			);
 		};
 /* End PBXProject section */
@@ -233,16 +138,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7747C29726AEEDE300802D49 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7747C2A826AEEDE400802D49 /* LaunchScreen.storyboard in Resources */,
-				7747C2A526AEEDE400802D49 /* Assets.xcassets in Resources */,
-				7747C2A326AEEDE300802D49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,44 +152,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7747C29526AEEDE300802D49 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7747C2A026AEEDE300802D49 /* ViewController.swift in Sources */,
-				7747C29C26AEEDE300802D49 /* AppDelegate.swift in Sources */,
-				7747C29E26AEEDE300802D49 /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7747C2B726AEF65800802D49 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7747C26A26AEEAF700802D49 /* DragonFly */;
-			targetProxy = 7747C2B626AEF65800802D49 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7747C2A126AEEDE300802D49 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7747C2A226AEEDE300802D49 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7747C2A626AEEDE400802D49 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7747C2A726AEEDE400802D49 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7747C27126AEEAF700802D49 /* Debug */ = {
@@ -420,7 +278,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = VH525588L5;
+				DEVELOPMENT_TEAM = QQK85Y8S7P;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -444,7 +302,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = VH525588L5;
+				DEVELOPMENT_TEAM = QQK85Y8S7P;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -459,48 +317,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		7747C2AB26AEEDE400802D49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VH525588L5;
-				INFOPLIST_FILE = DragonFlyExemples/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.DragonFlyExemples;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7747C2AC26AEEDE400802D49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VH525588L5;
-				INFOPLIST_FILE = DragonFlyExemples/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.DragonFlyExemples;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -522,15 +338,6 @@
 			buildConfigurations = (
 				7747C27426AEEAF700802D49 /* Debug */,
 				7747C27526AEEAF700802D49 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7747C2AA26AEEDE400802D49 /* Build configuration list for PBXNativeTarget "DragonFlyExemples" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7747C2AB26AEEDE400802D49 /* Debug */,
-				7747C2AC26AEEDE400802D49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

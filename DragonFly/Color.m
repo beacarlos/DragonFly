@@ -10,8 +10,9 @@
 @implementation Color
 
 - (instancetype)init {
-    self = [self initWithHex:@""];
     self = [self initWithRed:0 green:0 blue:0];
+    self = [self initWithHex:@""];
+
     return self;
 }
 
@@ -41,7 +42,7 @@
 }
 
 // MARK: - SET RANDOM COLOR
--(UIColor *)randomColor {
++(UIColor *)randomColor {
     CGFloat hue = ( arc4random() % 256 / 256.0 );  //  0.0 to 1.0
     CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from white
     CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from black
@@ -49,7 +50,7 @@
 }
 
 // MARK: - CONVERSION HEX TO UICOLOR
--(UIColor *) color {
+-(UIColor *)color {
     // Remove # and set hexString to uppercased
     NSString *colorString = [[_hex stringByReplacingOccurrencesOfString: @"#" withString: @""] uppercaseString];
     CGFloat alpha, red, blue, green;
@@ -70,7 +71,7 @@
 }
 
 // Convert each part of hexString to RGB
--(CGFloat) colorComponentFrom: (NSString *) string start: (NSUInteger) start length: (NSUInteger) length {
+-(CGFloat)colorComponentFrom: (NSString *) string start: (NSUInteger) start length: (NSUInteger) length {
     NSString *substring = [string substringWithRange: NSMakeRange(start, length)];
     NSString *fullHex = length == 2 ? substring : [NSString stringWithFormat: @"%@%@", substring, substring];
     unsigned hexComponent;
@@ -159,11 +160,10 @@
     return [UIColor colorWithRed: red green: green blue: blue alpha: alpha];
 }
 
-+(CAGradientLayer *) gradient: (UIColor*)primaryColor secondaryColor:(UIColor*)secondaryColor view:(UIView*)view {
-    CAGradientLayer *gradient = [CAGradientLayer layer];
-    gradient.frame = view.bounds;
-    gradient.colors = @[(id)[UIColor blueColor].CGColor, (id)[UIColor redColor].CGColor];
-    return gradient;
++(CAGradientLayer *)gradient: (UIColor *)firstColor secondColor:(UIColor *)secondColor {
+    CAGradientLayer *theViewGradient = [CAGradientLayer layer];
+    theViewGradient.colors = [NSArray arrayWithObjects: (id)firstColor.CGColor, (id)secondColor.CGColor, nil];
+    return theViewGradient;
 }
 
 @end
