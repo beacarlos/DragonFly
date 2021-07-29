@@ -41,7 +41,6 @@
     return self;
 }
 
-// MARK: - SET RANDOM COLOR
 +(UIColor *)randomColor {
     CGFloat hue = ( arc4random() % 256 / 256.0 );  //  0.0 to 1.0
     CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from white
@@ -49,7 +48,6 @@
     return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
 }
 
-// MARK: - CONVERSION HEX TO UICOLOR
 -(UIColor *)color {
     // Remove # and set hexString to uppercased
     NSString *colorString = [[_hex stringByReplacingOccurrencesOfString: @"#" withString: @""] uppercaseString];
@@ -70,7 +68,6 @@
     return [UIColor colorWithRed: red green: green blue: blue alpha: alpha];
 }
 
-// Convert each part of hexString to RGB
 -(CGFloat)colorComponentFrom: (NSString *) string start: (NSUInteger) start length: (NSUInteger) length {
     NSString *substring = [string substringWithRange: NSMakeRange(start, length)];
     NSString *fullHex = length == 2 ? substring : [NSString stringWithFormat: @"%@%@", substring, substring];
@@ -79,7 +76,6 @@
     return hexComponent / 255.0;
 }
 
-// MARK: - SET DARK COLOR
 -(UIColor *)darker {
     // Remove # and set hexString to uppercased
     NSString *colorString = [[_hex stringByReplacingOccurrencesOfString: @"#" withString: @""] uppercaseString];
@@ -167,19 +163,3 @@
 }
 
 @end
-
-//Example #1
-//Convert red hex color code FF0000 to RGB color:
-//Hex = FF0000
-
-//So the RGB colors are:
-//R = FF(base 16) = 255 (base 10)
-//G = 00 = 010
-//B = 00 = 010
-
-// Darker
-//+ Escuro (Any): diminui 10% dos valores de R, G e B
-//++ Escuro (Any High): diminui 25% dos valores de R, G e B
-//    - Se um deles for 0, não muda
-
-//Light - opacity
