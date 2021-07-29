@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name = "DragonFly"
-  spec.version = "1.0.2"
+  spec.version = "1.0.3"
   spec.summary = "DragonFly is a framework that facilitates the use of colors in everyday life."
   spec.description = "DragonFly is a framework that facilitates the use of colors in everyday life."
   spec.homepage = "https://github.com/beacarlos/DragonFly"
