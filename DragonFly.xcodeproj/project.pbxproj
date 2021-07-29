@@ -11,6 +11,8 @@
 		7747C2B026AEF17900802D49 /* Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 7747C2AE26AEF17900802D49 /* Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7747C2B126AEF17900802D49 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 7747C2AF26AEF17900802D49 /* Color.m */; };
 		7747C2B226AEF23200802D49 /* Color.m in Headers */ = {isa = PBXBuildFile; fileRef = 7747C2AF26AEF17900802D49 /* Color.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		77D3290026B2EA7E00D3372F /* Font.h in Headers */ = {isa = PBXBuildFile; fileRef = 77D328FE26B2EA7E00D3372F /* Font.h */; };
+		77D3290126B2EA7E00D3372F /* Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D328FF26B2EA7E00D3372F /* Font.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		7747C26F26AEEAF700802D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7747C2AE26AEF17900802D49 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 		7747C2AF26AEF17900802D49 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
+		77D328FE26B2EA7E00D3372F /* Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Font.h; sourceTree = "<group>"; };
+		77D328FF26B2EA7E00D3372F /* Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Font.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				7747C26E26AEEAF700802D49 /* DragonFly.h */,
 				7747C2AE26AEF17900802D49 /* Color.h */,
 				7747C2AF26AEF17900802D49 /* Color.m */,
+				77D328FE26B2EA7E00D3372F /* Font.h */,
+				77D328FF26B2EA7E00D3372F /* Font.m */,
 				7747C26F26AEEAF700802D49 /* Info.plist */,
 			);
 			path = DragonFly;
@@ -77,6 +83,7 @@
 				7747C2B026AEF17900802D49 /* Color.h in Headers */,
 				7747C2B226AEF23200802D49 /* Color.m in Headers */,
 				7747C27026AEEAF700802D49 /* DragonFly.h in Headers */,
+				77D3290026B2EA7E00D3372F /* Font.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77D3290126B2EA7E00D3372F /* Font.m in Sources */,
 				7747C2B126AEF17900802D49 /* Color.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
