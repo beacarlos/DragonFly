@@ -10,6 +10,10 @@
 
 @interface Font : UIFont
 
+/**
+@abstract Initializes and returns a System Font object with default size 17 pre-defined. It has a font parameter of type UIFont to insert other fonts installed in the project.
+@param font The font has to be standardized. It must be of type UIFont.
+*/
 -(instancetype) initWithFont: (UIFont *)font;
 
 @property (nonatomic) UIFont* font;

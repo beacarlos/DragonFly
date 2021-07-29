@@ -7,15 +7,28 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, DarkIntensity) {
+        darker,
+        darkerHigh
+};
+
+typedef NS_ENUM(NSInteger, LightIntensity) {
+        lighter,
+        lighterHigh
+};
 
 @interface Color : UIColor
 /**
-@abstract Returns the UIColor object receiving a String of a hexadecimal code.
+@abstract Initializes and returns the UIColor object receiving a String of a hexadecimal code.
+@param hex The string that represents the hexadecimal code.
 */
 -(instancetype) initWithHex:(NSString *)hex;
 
 /**
-@abstract Returns the UIColor object receiving red, green, blue components.
+@abstract Initializes and returns the UIColor object receiving red, green, blue components.
+@param red The integer that represents the red component, specified as a value from 0 to 255.
+@param green The integer that represents the green component, specified as a value from 0 to 255.
+@param blue The integer that represents the blue component, specified as a value from 0 to 255.
 */
 -(instancetype) initWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue;
 
@@ -41,17 +54,16 @@
 /**
 @abstract Returns the UIColor object of the color passed in the initializer in a darker tone.
 @discussion That method darkens the color by modifying the red, green, and blue color components.
+@param intensity The color intensity, it can be darker or darkerHigh.
 */
--(UIColor *) darker;
+-(UIColor *) darker: (DarkIntensity)intensity;
 
 /**
 @abstract Returns the UIColor object of the color passed in the initializer in a lighter tone.
 @discussion That method lightens the color by modifying the alpha component.
+@param intensity The color intensity, it can be lighter or lighterHigh.
 */
--(UIColor *) lighter;
-
--(UIColor *) darkerHigh;
--(UIColor *) lighterHigh;
+-(UIColor *) lighter: (LightIntensity)intensity;
 
 /**
 @abstract Returns the CAGradientLayer object of the colors parameters.
